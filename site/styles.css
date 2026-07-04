@@ -59,7 +59,18 @@ header.site { border-bottom: 1px solid var(--line); }
   padding: .7rem 1.15rem;
   border-radius: .7rem;
 }
-.cta-note { font-family: var(--mono); font-size: .8rem; color: var(--muted); }
+.contact {
+  display: inline-block;
+  padding: .7rem 1.15rem;
+  border: 1.5px solid var(--accent);
+  border-radius: .7rem;
+  color: var(--accent-2);
+  text-decoration: none;
+  transition: background .15s ease, color .15s ease;
+}
+.contact:hover { background: var(--accent); color: #fff; }
+.contact strong { font-weight: 700; }
+.cta-note { font-family: var(--mono); font-size: .8rem; color: var(--muted); margin-top: 1rem; }
 
 /* problem */
 .problem { padding: 3rem 1.5rem; font-size: 1.15rem; }
