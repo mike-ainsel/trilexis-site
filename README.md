@@ -4,7 +4,7 @@ Static landing page for **Trilexis** — the iPhone & iPad dictionary app for
 StarDict, DSL, and MDict.
 
 - `site/` — the static page (plain HTML/CSS, no build step, fully offline-friendly).
-- `Dockerfile` — bakes `site/` into `nginx:alpine`.
+- `Dockerfile` — bakes `site/` into `static-web-server` (tiny Rust static server).
 - `.github/workflows/build.yml` — on push to `main`, builds a **multi-arch
   (amd64/arm64)** image and pushes it to `ghcr.io/mike-ainsel/trilexis-site`.
 
