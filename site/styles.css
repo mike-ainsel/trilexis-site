@@ -1,12 +1,13 @@
 /* Trilexis — techy + warm. Self-contained, system fonts, fully offline. */
 :root {
-  --bg: #faf5ee;          /* warm cream */
-  --bg-2: #f2e9dc;        /* deeper cream for cards */
-  --ink: #201b17;         /* warm near-black */
-  --muted: #6c5f52;       /* warm grey-brown */
-  --accent: #d9663a;      /* terracotta / amber */
-  --accent-2: #b34a24;    /* darker accent for hover */
-  --line: #e4d8c7;
+  --bg: #f4f7f8;          /* cool near-white (icon background) */
+  --bg-2: #e9f1f3;        /* light cool card */
+  --ink: #1a2930;         /* dark slate-teal */
+  --muted: #566b72;       /* cool grey */
+  --accent: #2f9d90;      /* teal (left page of the book) */
+  --accent-2: #23808f;    /* deep teal — hover/links */
+  --accent-blue: #4a8fcf; /* blue (right page) — gradient partner */
+  --line: #d6e4e8;
   --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
@@ -42,7 +43,8 @@ header.site { border-bottom: 1px solid var(--line); }
   position: relative;
   padding: 5.5rem 0 4rem;
   background:
-    radial-gradient(60rem 30rem at 70% -10%, rgba(217,102,58,.14), transparent 60%),
+    radial-gradient(50rem 28rem at 72% -12%, rgba(74,143,207,.16), transparent 60%),
+    radial-gradient(40rem 24rem at 18% -6%, rgba(47,157,144,.13), transparent 60%),
     var(--bg);
 }
 .hero h1 { font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.05; margin: .6rem 0 1rem; letter-spacing: -.02em; }
@@ -53,7 +55,7 @@ header.site { border-bottom: 1px solid var(--line); }
 .cta { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: .9rem 1.2rem; align-items: center; }
 .badge {
   display: inline-block;
-  background: var(--accent);
+  background: linear-gradient(90deg, var(--accent), var(--accent-blue));
   color: #fff;
   font-weight: 600;
   padding: .7rem 1.15rem;
