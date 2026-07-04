@@ -109,6 +109,17 @@ header.site { border-bottom: 1px solid var(--line); }
 .formats li { padding-left: 1.4rem; position: relative; color: var(--muted); }
 .formats li::before { content: "◈"; position: absolute; left: 0; color: var(--accent); }
 .formats strong { color: var(--ink); }
+.formats-lede { color: var(--muted); margin: .4rem 0 0; }
+.formats code {
+  font-family: var(--mono);
+  font-size: .72rem;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: .35rem;
+  padding: .1rem .4rem;
+  color: var(--accent-2);
+  white-space: nowrap;
+}
 
 /* footer */
 footer.site { border-top: 1px solid var(--line); padding: 2.5rem 0 3rem; }
