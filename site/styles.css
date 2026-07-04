@@ -35,8 +35,8 @@ a { color: var(--accent-2); }
 /* header / footer */
 header.site { border-bottom: 1px solid var(--line); }
 .bar { display: flex; align-items: center; justify-content: space-between; height: 4rem; }
-.logo { font-weight: 700; font-size: 1.25rem; letter-spacing: -.01em; }
-.logo::before { content: "◈ "; color: var(--accent); }
+.logo { font-weight: 700; font-size: 1.25rem; letter-spacing: -.01em; display: inline-flex; align-items: center; gap: .45rem; }
+.logo-mark { height: 1.5em; width: 1.5em; border-radius: .35em; }
 
 /* hero */
 .hero {
