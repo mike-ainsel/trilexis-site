@@ -4,11 +4,12 @@
 
 Landing page for **Trilexis** — the iPhone & iPad dictionary app that opens
 **StarDict, DSL, MDict, Babylon, ZIM, CC-CEDICT and CSV** dictionaries in one
-app, with unified search, iPad Split View, and 100% offline operation.
+app, with unified search, morphological lookup, iPad Split View, and 100%
+offline operation.
 
 ## Contents
 
-- `site/` — the static page (plain HTML/CSS, no build step)
+- `site/` — the static page (`index.html`, `styles.css`, `img/` screenshots; plain HTML/CSS, no build step)
 - `Dockerfile` — packages `site/` into a small static web server
 - `.github/workflows/build.yml` — builds a multi-arch container image on push
 
